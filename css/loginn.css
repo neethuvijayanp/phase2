@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif
+}
+
+body {
+    background-image: url("https://www.ekeralatourism.net/wp-content/uploads/2017/12/Kovalam.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* nav section */
+.navbar{
+    background-color:#21325E;
+
+}
+.nav-heading{
+  color:#fff;
+  display:inline-block;
+}
+.navbar-brand {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.nav-item {
+    padding: 0 10px;
+}
+.nav-link {
+    font-size: 1.5rem;
+    font-family: 'Ubuntu', sans-serif;
+    color:white;
+}
+.nav-link:hover {
+color:#F1D00A;
+}
+.navbar-toggler {
+  border: 1px solid white;
+}
+
+
+/* login section */
+
+.container {
+    margin: 120px auto;
+    
+}
+.top-heading{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 24px;
+    background-color:#aaa;
+    color:white;
+}
+
+small{
+	color: #e74c3c;
+	position: absolute;
+	padding-top: 68px;
+	
+}
+#forgot {
+    min-width: 100px;
+    margin-left: auto;
+    text-decoration: none
+}
+
+a:hover {
+    text-decoration: none
+}
+
+.form-inline {
+    padding-left: 10px;
+    margin: 0;
+    margin-top: 20px;
+}
+.form-inline label{
+    padding-left:8px;
+    cursor: pointer;
+}
+
+.btn.btn-primary {
+    margin-top: 20px;
+    border-radius: 15px
+}
+
+.panel {
+    min-height: 380px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 12px
+}
+
+.input-field {
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid lightgrey; 
+    transition: all 0.3s;
+   margin-top: 30px;
+    position:relative;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    
+}
+
+input[type='text'],
+input[type='password'] {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    width: 100%
+    
+}
+
+.fa-eye-slash.btn {
+    border: none;
+    outline: none;
+    box-shadow: none
+}
+
+img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative
+}
+
+a[target='_blank'] {
+    position: relative;
+    transition: all 0.1s ease-in-out
+}
+
+.bordert {
+    border-top: 1px solid #aaa;
+    position: relative
+}
+
+.bordert:after {
+    content: "or connect with";
+    position: absolute;
+    top: -13px;
+    left: 33%;
+    background-color: #fff;
+    padding: 0px 8px
+}
+
+
+@media(max-width: 360px) {
+    #forgot {
+        margin-left: 0;
+        padding-top: 10px
+    }
+
+    body {
+        height: 100%
+    }
+
+    .container {
+        margin: 30px 0
+    }
+
+    .bordert:after {
+        left: 25%
+    }
+}
+
+/*  */
+
+form .indicator{
+    height: 10px;
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: none;
+  }
+  form .indicator span{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: lightgrey;
+    border-radius: 5px;
+  }
+  form .indicator span:nth-child(2){
+    margin: 0 3px;
+  }
+  form .indicator span.active:before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+  }
+  .indicator span.weak:before{
+    background-color: #ff4757;
+  }
+  .indicator span.medium:before{
+    background-color: orange;
+  }
+  .indicator span.strong:before{
+    background-color: #23ad5c;
+  }
+  form .text{
+    font-size: 18px;
+    font-weight: 500;
+    display: none;
+    margin-bottom: 0px;;
+  }
+  form .text.weak{
+    color: #ff4757;
+  }
+  form .text.medium{
+    color: orange;
+  }
+  form .text.strong{
+    color: #23ad5c;
+  }

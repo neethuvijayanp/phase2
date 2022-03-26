@@ -1,0 +1,394 @@
+*{
+    margin:0%;
+    padding:0;
+}
+
+/* nav section */
+.navbar{
+    background-color:#21325E;
+
+}
+.nav-heading{
+  color:#fff;
+  display:inline-block;
+}
+.navbar-brand {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.nav-item {
+    padding: 0 10px;
+}
+.nav-link {
+    font-size: 1.5rem;
+    font-family: 'Ubuntu', sans-serif;
+    color:white;
+}
+.nav-link:hover {
+color:#F1D00A;
+}
+.navbar-toggler {
+  border: 1px solid white;
+}
+@media (max-width:600px) {
+  .nav-heading{
+    padding-top:2.5%;
+    font-size:1.5rem;
+    /* display:block; */
+   }
+}
+/* carousel section */
+#carousel-top{
+    margin-top:2%;
+}
+.carousel-top-img{
+    height:600px;
+}
+.carousel-caption h4{
+    font-family: 'Montserrat', sans-serif;
+    font-size:1.5rem;
+    
+}
+.carousel-caption p{
+    font-size:1.25rem;
+    font-family: 'Montserrat', sans-serif;
+  
+}
+
+/* about section */
+#about{
+  padding:10% 10% 0;
+  font-family: 'Montserrat', sans-serif;
+  /* background-color: #FFC0D3; */
+  text-align:justify;    
+  
+}
+#about h1{
+  font-weight: 700;
+  font-size:3rem;
+  /* color:#F76E11; */
+}
+#about p{
+  padding:3% 0 0;  
+  line-height:1.75;
+  font-size:1.2rem;  
+ text-indent: 75px;   
+}
+
+/* things to do */
+
+
+@import url("https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap");
+:root {
+  --d: 700ms;
+  --e: cubic-bezier(0.19, 1, 0.22, 1);
+  --font-sans: "Rubik", sans-serif;
+  --font-serif: "Cardo", serif;
+}
+#things{
+    margin:15% 0 10%;
+    padding-bottom: 5%;
+background-color:#D1D1D1;
+/* background-color: #F582A7; */
+}
+#things h1{
+    color:#fff;
+    padding:5% 0 3% ;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size:4rem;
+    text-align:center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.page-content {
+  display: grid;
+  grid-gap: 1rem;
+  padding: 1rem;
+  max-width: 1024px;
+  margin: 0 auto;
+  font-family: var(--font-sans);
+}
+@media (min-width: 600px) {
+  .page-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 800px) {
+  .page-content {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.card-things {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+  color: whitesmoke;
+  background-color: whitesmoke;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 600px) {
+  .card-things {
+    height: 350px;
+  }
+}
+.card-things:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110%;
+  background-size: cover;
+  background-position: 0 0;
+  transition: transform calc(var(--d) * 1.5) var(--e);
+  pointer-events: none;
+}
+.card-things:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  pointer-events: none;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.009) 11.7%, rgba(0, 0, 0, 0.034) 22.1%, rgba(0, 0, 0, 0.072) 31.2%, rgba(0, 0, 0, 0.123) 39.4%, rgba(0, 0, 0, 0.182) 46.6%, rgba(0, 0, 0, 0.249) 53.1%, rgba(0, 0, 0, 0.32) 58.9%, rgba(0, 0, 0, 0.394) 64.3%, rgba(0, 0, 0, 0.468) 69.3%, rgba(0, 0, 0, 0.54) 74.1%, rgba(0, 0, 0, 0.607) 78.8%, rgba(0, 0, 0, 0.668) 83.6%, rgba(0, 0, 0, 0.721) 88.7%, rgba(0, 0, 0, 0.762) 94.1%, rgba(0, 0, 0, 0.79) 100%);
+  transform: translateY(-50%);
+  transition: transform calc(var(--d) * 2) var(--e);
+}
+.card-things:nth-child(1):before {
+  background-image: url(https://i.pinimg.com/originals/dd/97/aa/dd97aab25f517b8f0941980204f7859b.jpg);
+}
+.card-things:nth-child(2):before {
+  background-image: url(https://keralatravels.com/userfiles/1480576659_munnar_kerala_india.jpg);
+
+}
+.card-things:nth-child(3):before {
+  background-image: url(https://www.keralatravels.com/files/menuboxes/112485076.jpg);
+}
+.card-things:nth-child(4):before {
+  background-image: url(https://www.ekeralatourism.net/wp-content/uploads/2018/03/Kuttanad.jpg);
+}
+
+.content-things {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  transition: transform var(--d) var(--e);
+  z-index: 1;
+}
+.content-things > * + * {
+  margin-top: 1rem;
+}
+
+.title-things {
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.copy-things {
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  font-style: italic;
+  line-height: 1.35;
+}
+
+
+
+@media (hover: hover) and (min-width: 600px) {
+  .card-things:after {
+    transform: translateY(0);
+  }
+
+  .content-things {
+    transform: translateY(calc(100% - 4.5rem));
+  }
+  .content-things > *:not(.title-things) {
+    opacity: 0;
+    transform: translateY(1rem);
+    transition: transform var(--d) var(--e), opacity var(--d) var(--e);
+  }
+
+  .card-things:hover,
+.card:focus-within {
+    align-items: center;
+  }
+  .card-things:hover:before,
+.card:focus-within:before {
+    transform: translateY(-4%);
+  }
+  .card-things:hover:after,
+.card-things:focus-within:after {
+    transform: translateY(-50%);
+  }
+  .card-things:hover .content-things,
+.card-things:focus-within .content-things {
+    transform: translateY(0);
+  }
+  .card-things:hover .content-things > *:not(.title-things),
+.card-things:focus-within .content-things > *:not(.title-things) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: calc(var(--d) / 8);
+  }
+
+  .card-things:focus-within:before, .card-things:focus-within:after,
+.card-things:focus-within .content-things,
+.card-things:focus-within .content-things > *:not(.title-things) {
+    transition-duration: 0s;
+  }
+}
+
+/* Top destinations */
+
+#destinations{
+    background-color:#FFBD35;
+    margin:15% 0 10%;
+    padding-bottom: 5%;
+
+}
+.destinations-heading{
+    color:#fff;
+    padding:5% 0 3% ;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size:4rem;
+    text-align:center;
+}
+
+  
+ 
+  
+.wrapper {
+    display: flex;
+    width: 100%;
+    /* justify-content: space-around; */
+    margin:2%;
+  }
+  
+  .card-dest {
+    width: 280px;
+    height: 360px;
+    margin:8%;
+    border-radius: 15px;
+    padding: 1.5rem;
+    background: white;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    transition: 0.4s ease-out;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+  }
+  .card-dest:hover {
+    transform: translateY(20px);
+  }
+  .card-dest:hover:before {
+    opacity: 1;
+  }
+  .card-dest:hover .info {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  .card-dest:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+    transition: 0.5s;
+    opacity: 0;
+  }
+  .card-dest img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+  }
+  .card-dest .info {
+    position: relative;
+    z-index: 3;
+    color: white;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s;
+  }
+  .card-dest .info h1 {
+    margin: 0px;
+  }
+  .card-dest .info p {
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+  }
+  .card-dest .info button {
+    padding: 0.6rem;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    background: white;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease;
+  }
+  .card-dest .info button:hover {
+    background: dodgerblue;
+    color: white;
+  }
+
+   
+
+
+#contacts{
+    background-color: #203239; 
+    margin:15% 0 0;
+    padding-bottom: 5%;
+    text-align: center;
+} 
+#contacts h1{
+    color:#fff;
+    padding:5% 0 3% ;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size:3rem; 
+}
+
+#contacts img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    padding:1.5%;
+}
+
+
+
+
+/* footer  */
+#footer{
+    color:gray;
+    text-align:center;
+    padding-top:2%;
+}

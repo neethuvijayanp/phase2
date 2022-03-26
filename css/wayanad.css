@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700');
+
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: white;
+}
+.title-top{
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    text-align:center;
+    font-size:5rem;
+    padding:18% 0;
+   
+}
+.header{
+    background-image: url("https://www.ekeralatourism.net/wp-content/uploads/2018/03/Wayanad.jpg");
+ background-size: cover;
+    background-repeat: no-repeat; 
+    padding:0;
+    width:100%;
+    height:600px;
+   
+}
+#about{
+    padding:7% 10%;
+    font-family: 'Montserrat', sans-serif;
+    /* background-color: #FFC0D3; */
+    text-align:justify;    
+    
+}
+#about h1{
+    font-weight: 700;
+    font-size:3rem;
+    color:#F76E11;
+}
+ .about-para{
+    padding:3% 0;  
+    line-height:1.5;
+    font-size:1.2rem;      
+  }
+ 
+  h1 + p::first-letter {
+    color: white;
+    background-color: rgb(98, 0, 255);
+    border-radius: 2px; 
+    box-shadow: 3px 3px 0 red;
+    font-size: 250%;
+     padding: 6px 3px;
+     margin-right: 1%;
+     margin-left:1%;
+    float: left; 
+   } 
+
+
+/* Details Section */
+#details{
+    background-color: #FF5C8D;
+}
+
+h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+}
+
+.box {
+    
+    padding: 60px 0px
+    
+}
+
+.box-part {
+    background: #F0FFFF;
+    padding: 30px 5px;
+    margin: 20px 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    height:270px;
+}
+
+.box-part:hover {
+    background: #000000
+}
+
+.box-part:hover .fa,
+.box-part:hover .title,
+.box-part:hover .text,
+.box-part:hover a {
+    color: #FFF;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out
+}
+
+.text {
+    margin: 20px 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.fa {
+   margin-bottom: 10px;
+    color: #00BFFF;
+}
+
+  /* card section */
+
+#places{
+    margin:0;
+    padding:0;
+    background-color: #FDEFF4;
+    width:100%;
+    margin-top:10%;
+}
+#places h1{
+    color:#F76E11;
+    padding:5% 0 5% 10%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size:3rem;
+}
+.card-place{
+    border: 0;
+    margin: 0 20%;
+    text-align: center;
+    margin-bottom:10%;
+    transition:0.5s;
+  cursor:pointer;
+}
+
+.card-place-header{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    background-color: whitesmoke;
+    border-bottom:0;  
+  transition:1s;
+  cursor:pointer;
+  padding:2% 0;
+}
+
+.card-place::before {
+    transform-origin: left top;
+  }
+  .card-place::after {
+    transform-origin: right bottom;
+  }
+.card-place:hover{
+    transform: scale(1.05);
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+  }
+  .card-place:hover::before, .card-place:hover::after, .card-place:focus::before, .card-place:focus::after {
+    transform: scale3d(1, 1, 1);
+  }
+
+.card-place-img{
+    width:100%; 
+    height:420px;  
+}
+
+.card-place-body{
+    padding:0;
+}
+
+.card-place-footer{
+    font-family: 'Montserrat', sans-serif;
+    background-color: whitesmoke;
+    text-align:justify;
+    border-top:0;
+   font-size:1.2rem;
+   padding:1.5%
+}
+ 
+
+@media (max-width:1028px) {
+    .header{
+        background-image: url("https://www.ekeralatourism.net/wp-content/uploads/2018/03/Wayanad.jpg");
+        background-size: cover;
+        background-repeat: no-repeat; 
+        width:100%;
+        height:500px;
+    }
+    
+    .title-top {
+        text-align: center;
+        padding-top:35%;
+        font-size:4rem;
+    }
+    .card-place-header{
+        font-size:2rem;
+        padding:2% 0;
+    }
+    .card-place-img{
+        width:100%; 
+        height:300px;  
+    }
+    .card-place-footer{
+       text-align:justify;
+       border-top:0;
+       font-size:1rem;
+       padding:1.5%
+    }
+    #places h1{ 
+    
+      font-size:2.5rem;
+  }
+}
+
+/* card resort section */
+#resorts{
+    background-color: #524A4E;
+    text-align:center;
+    font-family: 'Montserrat', sans-serif;
+}
+#resorts h1{
+    /* color:#F76E11; */
+    color:white;
+    margin:12% 7% 3% ;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size:3rem;
+    padding-top:5%;
+        
+}
+.card-resort{
+   margin:8%; 
+   height:420px;
+   margin-bottom:25%;
+}
+.card-resort-title{
+    padding:2%;
+   
+}
+.card-resort-footer{
+    padding:2%;
+    color:white;
+    background-color: orangered;
+    border:0;
+    cursor:pointer;
+    transition:0.3s;
+}
+.card-resort-footer:hover{
+color:white;
+
+}
+.card-resort-img{
+cursor:pointer;
+transition:1s;
+
+}
+.card-resort-img::before {
+    transform-origin: left top;
+  }
+  .card-resort-img::after {
+    transform-origin: right bottom;
+  }
+.card-resort-img:hover{
+    transform: scale(1.05);
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+  }
+  .card-resort-img:hover::before, .card-resort-img:hover::after, .card-resort-img:focus::before, .card-resort-img:focus::after {
+    transform: scale3d(1, 1, 1);
+  }
+
+  .card-resort-footer::before {
+    transform-origin: left top;
+  }
+  .card-resort-footer::after {
+    transform-origin: right bottom;
+  }
+.card-resort-footer:hover{
+    transform: scale(1.05);
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+  }
+  .card-resort-footer:hover::before, .card-resort-footer:hover::after, .card-resort-footer:focus::before, .card-resort-footer:focus::after {
+    transform: scale3d(1, 1, 1);
+  }
+ 
+
+#footer{
+    color:gray;
+    text-align:center;
+    padding-top:2%;
+}
